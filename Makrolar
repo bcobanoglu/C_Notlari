@@ -1,0 +1,29 @@
+#define komutunun parametler ile kullanılmasına makro denir.
+Makro kullanım şekilleri ve örnek program;
+
+#include<stdio.h>
+//Hem makro parametreleri hem de makro en dıştan paranteze alınmalıdır
+#define TOPLA(a,b) ((a)+(b))
+//Eğer parametre önüne # getirilirse önişlemci bunu string olarak algılar
+#define YAZ(z) printf(#z ".:%d\n",z)
+//Makrolar tek satırdan oluşmak zorunda değildir. Eğer birden fazla satırlık
+//makro yazılacaksa satır sonuna \ (ters bölü) karakteri konulmalıdır
+#define Not(n)  if ((n)>50) printf("Geçti\n"); \
+                else printf ("Kaldı\n");
+
+int main()
+{
+    int sonuc;
+    sonuc = TOPLA(51,10); //!
+    YAZ(sonuc);
+    Not(sonuc);
+return 0;
+}
+
+//Makrolar ile Fonksiyonlar arasındaki fark nedir?
+1.Makro çağrıldığında gerçekte programa önişlemci tarafından bir kod eklenir.
+Dolayısıyla bir makro 5 kez çağrılırsa aynı kod 5 defa programa eklenecek ve program boyutu artacaktır.
+Oysa fonksiyon 5 kez çağrılsa da 1 kez programa eklenecektir.
+2.Makrolar fonksiyonlara göre faha hızlı çalışırlar, (daha doğrusu hızlı çağrılırlar).
+3. Çok küçük programlar makro, büyük boyutlu programların ise fonksiyonlar şeklinde yazılması mantıklıdır.
+Kaynakça:A'dan Z'ye C Kılavuzu, Kaan Aslan
