@@ -1,3 +1,8 @@
+Normal de #define, sabit tanımlama da kullanılan bir önişlemci komutudur. Örneğin;
+bir A dizisinin eleman sayısını (N) hesaplamak için aşağıdaki kod satırı yazılır;
+  int A[]={2,3,4,5,6,7,8};
+  #define N sizeof(A)/sizeof(int)
+
 #define komutunun parametler ile kullanılmasına makro denir.
 Makro kullanım şekilleri ve örnek program;
 
@@ -25,5 +30,8 @@ return 0;
 Dolayısıyla bir makro 5 kez çağrılırsa aynı kod 5 defa programa eklenecek ve program boyutu artacaktır.
 Oysa fonksiyon 5 kez çağrılsa da 1 kez programa eklenecektir.
 2.Makrolar fonksiyonlara göre faha hızlı çalışırlar, (daha doğrusu hızlı çağrılırlar).
-3. Çok küçük programlar makro, büyük boyutlu programların ise fonksiyonlar şeklinde yazılması mantıklıdır.
-Kaynakça:A'dan Z'ye C Kılavuzu, Kaan Aslan
+3. Çok küçük programların makro, büyük boyutlu programların ise fonksiyonlar şeklinde yazılması mantıklıdır.
+
+Kaynakça:
+1. A'dan Z'ye C Kılavuzu, Kaan Aslan
+2. C/C++ Programlama, Bülent Çobanoğlu
