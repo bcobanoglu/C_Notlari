@@ -32,7 +32,12 @@ Dolayısıyla bir makro 5 kez çağrılırsa aynı kod 5 defa programa eklenecek
 Oysa fonksiyon 5 kez çağrılsa da 1 kez programa eklenecektir.
 2.Makrolar fonksiyonlara göre faha hızlı çalışırlar, (daha doğrusu hızlı çağrılırlar).
 3. Çok küçük programların makro, büyük boyutlu programların ise fonksiyonlar şeklinde yazılması mantıklıdır.
+
 4. Örneklerden de görüleceği üzere #define tanımlamalarında satır sonlarında ';' kullanılmaz.
+
+#undef:
+– #define  ile tanımlanan sabit veya makro tanımını kaldırır.
+– Tanımı kaldırılan sabit veya makro sonradan tekrar tanımlanabilir.
 
 Kaynakça:
 1. A'dan Z'ye C Kılavuzu, Kaan Aslan
