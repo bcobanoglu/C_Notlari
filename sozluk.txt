@@ -1,0 +1,7 @@
+Pazartesi   Monday
+Salı        Tuesday  
+Carşamba    Wednesday
+Perşembe    Thursday 
+Cuma        Friday
+Cumartesi   Saturday
+Pazar       Sunday
